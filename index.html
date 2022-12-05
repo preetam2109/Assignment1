@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment1</title>
+    <link rel="stylesheet" href="index.css">
+
+
+    <style type="text/css">
+		body
+		{
+		    counter-reset: Serial;    
+		}
+
+		tr td:first-child:before {
+		  counter-increment: Serial;
+		  content:counter(Serial) " ";
+		}
+	</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="data">
+            <input type="hidden" id="SN" placeholder="Ente SN">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="text" id="lastname" placeholder="Enter lastname">
+            <input type="text" id="city" placeholder="Enter City">
+            <input type="text" id="country" placeholder="Enter Country">
+            <button id="bottom">Add row to bottom</button><button id="top">Add row to top</button>
+        </div>
+        <table id="myTable" class="table table-striped w-auto">
+            <tr>
+                <th>SL.No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td ></td>
+                <td>Rahul</td>
+                <td>Yadav</td>
+                <td>Raipur</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Preetam</td>
+                <td>Lahre</td>
+                <td>Los Angeles</td>
+                <td>California</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Nikhil</td>
+                <td>Singh</td>
+                <td>Pune</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Sumit</td>
+                <td>Gupta</td>
+                <td>Toronto</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Prashant</td>
+                <td>Tiwari</td>
+                <td>Moscow</td>
+                <td>Russia</td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
